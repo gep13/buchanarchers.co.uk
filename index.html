@@ -1,10 +1,124 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>
-      Buchan Archers
-    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>Buchan Archers</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <link href="assets/css/carousel.css" rel="stylesheet">
   </head>
   <body>
-    <p>This is a work in progress</p>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Buchan Archers</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <img src="assets/img/indoor-archery.jpeg" alt="Sometimes we shoot indoors..." />
+              <div class="carousel-caption text-start">
+                <h1>Sometimes we shoot indoors...</h1>
+                <p>We shoot indoors at the <a href="https://livelifeaberdeenshire.org.uk/sport-and-physical-activity/venues/peterhead-leisure-and-community-centre/">Peterhead Leisure and Community Centre</a> during Autumn/Winter.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="assets/img/outdoor-archery.jpeg" alt="Sometimes we shoot outdoors..." />
+              <div class="carousel-caption">
+                <h1>Sometimes we shoot outdoors...</h1>
+                <p>We shoot outdoors at our range near <a href="https://www.buchanaeroclub.co.uk/">Buchan Aero Club</a> during Spring/Summer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <img src="assets/img/fun-archery.jpeg" alt="But mostly we just have fun!" />
+              <div class="carousel-caption text-end">
+                <h1>But mostly we just have fun!</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container marketing">
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Interested in trying archery?</h2>
+            <p class="lead">The Buchan Archers Club meets every Sunday between 12-3pm.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/img/arrows-in-target.jpeg" width="500" height="500" />
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Different Bow types.</h2>
+            <p class="lead">Within the club we have a range of experience, as well as bow types. Folks within the club shoot Barebow, Longbow, Recurve, and Compound.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="assets/img/different-bow-types.jpeg" width="500" height="500" />
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Have questions? Ask on our Facebook Group.</h2>
+            <p class="lead">If you have questions, then feel free to join our <a href="https://www.facebook.com/groups/2233352196803701/">Facebook Group</a>, and ask your questions, and we will do our best to answer them.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/img/join-facebook-group.jpg" width="500" height="500" />
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+    </main>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
